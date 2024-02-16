@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -16,7 +16,32 @@
   }
 }
 
+html {
+  @apply max-w-[100vw] overflow-x-hidden;
+}
+
 body {
+  cursor: url("/custom_cursor.png"), auto;
+}
+
+input,
+textarea {
+  @apply border-b bg-transparent text-sm w-full px-2 py-3 sm:text-sm rounded-sm focus:border-b-2 focus:px-4 focus:outline-none outline-none transition-all;
+}
+
+.header {
+  @apply w-auto inline-block text-3xl md:text-5xl font-bold relative z-[1];
+}
+
+.header::before {
+  content: "";
+  @apply block absolute w-[110%] top-[110%] left-0 bg-teal-400/10 h-[30px] md:h-[35px] z-[-1];
+  transform-origin: bottom center;
+  transform: translateY(-85%) skewX(3deg);
+}
+
+body {
+  @apply max-w-[100vw] overflow-x-hidden;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +49,20 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.section-block {
+  @apply w-[100vw] min-h-[100vh] flex flex-col justify-center snap-start;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-800 hover:bg-slate-700;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-900 hover:bg-slate-950;
 }
