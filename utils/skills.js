@@ -64,6 +64,10 @@ const skills = [
         icon: "",
       },
       {
+        technology: "Framer",
+        icon: "",
+      },
+      {
         technology: "Bootstrap",
         icon: "",
       },
@@ -77,7 +81,7 @@ const skills = [
     title: "Tools & Services",
     skills: [
       {
-        technology: "Google",
+        technology: "Firebase",
         icon: "",
       },
       {
