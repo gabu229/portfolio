@@ -14,8 +14,9 @@ const WorkExperienceTimeline = ({ experiences }) => {
             transition={{ duration: 0.7 }}
             whileInView={{ opacity: 1, x: 0, y: 0 }}
             viewport={{ top: -20, bottom: -20, once: false }}
+
           >
-            <div className="flex items-center justify-center w-10 h-10 rounded-full border border-gray-700 bg-gray-600 group-[.is-active]:bg-gray-700 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-even:-translate-x-1/2 md:group-odd:translate-x-1/2"></div>
+            <div className="flex items-center justify-center w-10 h-10 rotate-45 border border-gray-600 bg-gray-900 group-[.is-active]:bg-gray-950 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-even:-translate-x-1/2 md:group-odd:translate-x-1/2"></div>
             <div className="w-[calc(100%-4rem)] me-10 md:me-0 md:w-[calc(50%-2.5rem)] bg-black/10 md:border-b border-gray-600 p-4 min-h-[150px]">
               <div className="flex flex-col sm:lg:flex-row md:flex-col sm:lg:items-center justify-between mb-4 space-x-2 sm:lg:mb-2">
                 <div className="font-bold text-gray-300">

@@ -12,8 +12,8 @@ const transitionSpringPhysics = {
 export default function Template({ children }) {
   return (
     <>
-      <AnimatePresence mode="wait" initial="false">
-        <motion.div key={Math.random()}>
+      {/* <AnimatePresence mode="wait" initial="false"> */}
+        <motion.div key={1}>
           <motion.div
             style={{
               backgroundColor: "#000",
@@ -37,11 +37,11 @@ export default function Template({ children }) {
             }}
             transition={transitionSpringPhysics}
             initial={{ height: "100vh" }}
-            animate={{ height: "0vh", transition: { delay: 2, duration: 0.4 } }}
+            animate={{ height: "0vh", transition: { delay: 1.5, duration: 0.4 } }}
           >
             <motion.div
               initial={{ duration: 0 }}
-              animate={{ display: "none", transition: { delay: 2 } }}
+              animate={{ display: "none", transition: { delay: 1.5 } }}
               className="relative flex justify-center items-center text-white font-light w-full min-h-screen"
             >
               <div className="w-full max-w-[500px] min-h-[20px] mx-3 px-3 sm:px-8 py-10 border text-lg animate-pulse">
@@ -67,7 +67,7 @@ export default function Template({ children }) {
             }}
             transition={transitionSpringPhysics}
             initial={{ height: "100vh" }}
-            animate={{ height: "0vh", transition: { delay: 2, duration: 0.6 } }}
+            animate={{ height: "0vh", transition: { delay: 1.5, duration: 0.6 } }}
           />
 
           <motion.div
@@ -80,11 +80,11 @@ export default function Template({ children }) {
             }}
             transition={transitionSpringPhysics}
             initial={{ height: "100vh" }}
-            animate={{ height: "0vh", transition: { delay: 2, duration: 0.8 } }}
+            animate={{ height: "0vh", transition: { delay: 1.5, duration: 0.8 } }}
           />
           {children}
         </motion.div>
-      </AnimatePresence>
+      {/* </AnimatePresence> */}
     </>
   );
 }

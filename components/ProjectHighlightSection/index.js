@@ -99,7 +99,7 @@ const ProjectHighlightSection = () => {
     <>
       <section
         className="section-block bg-slate-950 py-10 md:px-36 gap-10"
-        id="projects"
+        id="projectSection"
       >
         <div className="w-100 p-4">
           <h2 className="header">Project Highlights</h2>

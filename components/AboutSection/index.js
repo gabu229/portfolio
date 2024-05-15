@@ -5,7 +5,7 @@ import { aboutText } from "@/utils/about-note";
 
 const AboutSection = () => {
   return (
-    <section className="section-block bg-slate-900 py-16 md:px-36 gap-5">
+    <section className="section-block bg-slate-900 py-16 md:px-36 gap-5" id="aboutSection">
       <div className="w-full p-4">
         <h2 className="header">About me</h2>
       </div>

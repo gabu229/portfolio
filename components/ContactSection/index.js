@@ -12,6 +12,21 @@ import {
   faEnvelope,
   faEnvelopeSquare,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  SiFacebook,
+  SiInstagram,
+  SiLinkedin,
+  SiOrcid,
+  SiResearchgate,
+  SiScopus,
+  SiWhatsapp,
+  SiGmail,
+  SiGooglescholar,
+  SiGithub,
+  SiX,
+} from "react-icons/si";
+import { MdAlternateEmail } from "react-icons/md";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import ContactForm from "./ContactForm";
@@ -19,53 +34,61 @@ import ContactForm from "./ContactForm";
 const ContactSection = () => {
   return (
     <>
-      <section className="section-block bg-slate-950 py-10 md:px-36 gap-5 sticky top-0">
+      <section
+        className="section-block bg-slate-950 py-10 md:px-36 gap-5 sticky top-0"
+        id="contactSection"
+      >
         <div className="w-100 p-4">
           <h2 className="text-3xl md:text-5xl font-bold"></h2>
         </div>
         <div className="w-full">
-          <div className="min-h-[70vh] w-full md:flex flex-1">
-            <div className="flex items-center min-w-[40vw]">
-              <div className="flex flex-col my-3 gap-4">
+          <div className="min-h-[70vh] w-full md:flex flex-1 justify-between">
+            <div className="flex items-center min-w-[30vw]">
+              <div className="w-full grid grid-cols-3 md:grid-cols-3 gap-3">
                 <Link
-                  href="mailto:oriegabriel16@gmail.com"
+                  rel="noreferrer"
+                  href="https://github.com/gabu229"
                   target="_blank"
+                  className="hover:opacity-100"
                 >
-                  <FontAwesomeIcon
-                    icon={faEnvelopeSquare}
-                    className="sm:mx-5 hover:-translate-y-2 transition-all"
-                    size="2x"
-                  />
-                  oriegabriel16@gmail.com
+                  <div className="aspect-square bg-slate-900/60 hover:bg-slate-900 flex items-center justify-center">
+                    <SiGithub size={30} />
+                  </div>
                 </Link>
                 <Link
-                  href="https://www.linkedin.com/in/orie-gabriel/"
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/in/orie-gabriel"
                   target="_blank"
+                  className="hover:opacity-100"
                 >
-                  <FontAwesomeIcon
-                    icon={faLinkedin}
-                    className="sm:mx-5 hover:-translate-y-2 transition-all"
-                    size="2x"
-                  />
+                  <div className="aspect-square bg-slate-900/60 hover:bg-slate-900 flex items-center justify-center">
+                    <SiLinkedin size={30} />
+                  </div>
                 </Link>
-                <Link href="https://github.com/gabu229" target="_blank">
-                  <FontAwesomeIcon
-                    icon={faGithubSquare}
-                    className="sm:mx-5 hover:-translate-y-2 transition-all"
-                    size="2x"
-                  />
+                <Link
+                  rel="noreferrer"
+                  href="https://x.com/orie_gabriel"
+                  target="_blank"
+                  className="hover:opacity-100"
+                >
+                  <div className="aspect-square bg-slate-900/60 hover:bg-slate-900 flex items-center justify-center">
+                    <SiX size={30} />
+                  </div>
                 </Link>
-                <Link href="https://twitter.com/orie_gabriel" target="_blank">
-                  <FontAwesomeIcon
-                    icon={faTwitterSquare}
-                    className="sm:mx-5 hover:-translate-y-2 transition-all"
-                    size="2x"
-                  />
+                <Link
+                  rel="noreferrer"
+                  href="mailto: oriegabriel16@gmail.com"
+                  target="_blank"
+                  className="hover:opacity-100"
+                >
+                  <div className="aspect-square bg-slate-900/60 hover:bg-slate-900 flex items-center justify-center">
+                    <SiGmail size={30} />
+                  </div>
                 </Link>
               </div>
             </div>
-            <div className="my-16 w-full">
-                <ContactForm />
+            <div className="my-16 min-w-[40vw]">
+              <ContactForm />
             </div>
           </div>
         </div>

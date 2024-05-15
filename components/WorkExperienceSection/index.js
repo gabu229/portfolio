@@ -4,7 +4,7 @@ import WorkExperienceTimeline from "../Timeline";
 const WorkExperienceSection = () => {
   return (
     <>
-      <section className="section-block bg-slate-950 py-10 md:px-36 gap-5 sticky top-0">
+      <section className="section-block bg-slate-950 py-10 md:px-36 gap-5 sticky top-0" id="experienceSection">
         <div className="w-100 p-4 md:text-center">
           <h2 className="header mx-auto">Work Experience</h2>
         </div>

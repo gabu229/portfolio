@@ -6,6 +6,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faArrowTurnDown,
+  faCloudDownload,
+  faFileDownload,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
@@ -39,7 +41,7 @@ const Hero = () => {
       },
     },
   };
-  
+
   const leftTransition = {
     initial: {
       opacity: 0,
@@ -57,8 +59,11 @@ const Hero = () => {
   };
 
   return (
-    <section className="section-block bg-slate-900/95 backdrop-blur-[6px]">
-      <div className="flex flex-col sm:flex-row justify-center w-100">
+    <section
+      className="section-block bg-slate-900/95 backdrop-blur-[6px]"
+      id="heroSection"
+    >
+      <div className="flex flex-col sm:flex-row justify-center sm:items-center w-100">
         <div className="text-right flex flex-col justify-center align-middle px-3 overflow-hidden">
           <motion.div
             variants={rightTransition}
@@ -90,17 +95,16 @@ const Hero = () => {
               <br />
               Orie
             </h1>
-            {/* SOCIAL MEDIA LINKS */}
           </motion.div>
           <div className="text-end mt-8">
-            <Link href="#projects">
+            <Link href="/" download>
               <button className="bg-slate-900 px-4 py-3 hover:bg-slate-600 transition">
-                My Projects
                 <FontAwesomeIcon
-                  icon={faArrowTurnDown}
-                  className="ml-3 sm:ml-5"
+                  icon={faCloudDownload}
+                  className="mr-3 sm:mr-4"
                   size="1x"
                 />
+                Download Resume
               </button>
             </Link>
           </div>

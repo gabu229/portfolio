@@ -10,6 +10,7 @@ import SkillSection from "@/components/SkillSection";
 import ContactSection from "@/components/ContactSection";
 import WorkExperienceSection from "@/components/WorkExperienceSection";
 import CertificationsSection from "@/components/CertificationsSection";
+import MainNavbar from "@/components/Navbar";
 
 export default function Home() {
   useEffect(() => {
@@ -43,7 +44,9 @@ export default function Home() {
         loading="lazy"
       />
 
-      <main className="snap-mandatory snap-y">
+      <main className="max-w-[100vw] snap-mandatory overflow-x-hidden">
+        <MainNavbar />
+        
         <Hero />
 
         <AboutSection />
