@@ -47,9 +47,16 @@ const projects = [
     ],
   },
   {
+    title: "Professor's Portfolio",
+    description: "A portfolio website for Professor Olumakaiye Motunrayo",
+    view: "",
+    preview: "https://mfolumakaiye.com",
+    github: "/",
+    skills: ["NextJS", "ReactJS", "Framer", "NPM"],
+  },
+  {
     title: "Proofil.io",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur velit voluptatem doloremque, officiis, minima laboriosam amet doloribus et placeat laudantium laborum ad accusantium qui culpa recusandae nesciunt.",
+    description: "A web based drag and drop web page builder for everyone.",
     view: "",
     preview: "/",
     github: "/",
